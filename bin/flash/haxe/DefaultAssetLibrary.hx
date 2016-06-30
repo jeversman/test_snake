@@ -486,10 +486,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		if (path.exists (id)) {
 			
 			var loader = new URLLoader ();
-			loader.dataFormat = flash.net.URLLoaderDataFormat.BINARY;
 			loader.addEventListener (Event.COMPLETE, function (event:Event) {
 				
-				var bytes = Bytes.ofData (event.currentTarget.data);
+				var bytes = Bytes.ofString (event.currentTarget.data);
 				promise.complete (bytes);
 				
 			});

@@ -91,7 +91,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "34",
+			build: "36",
 			company: "RG",
 			file: "testsnake",
 			fps: 60,
